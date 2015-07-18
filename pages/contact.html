@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact us - CrossRoads</title><!-- Website's title ( it will be shown in browser's tab ), Change the website's title based on your Hotel information -->
+	<meta name="description" content="Pinar is Hotel and Resort HTML template."><!-- Add your Hotel short description -->
+	<meta name="keywords" content="Responsive,HTML5,CSS3,XML,JavaScript"><!-- Add some Keywords based on your Hotel and your business and separate them by comma -->
+	<meta name="author" content="Joseph a, ravistheme@gmail.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
+	<link href='http://fonts.googleapis.com/css?family=Lobster%7cRaleway:400,300,100,600,700,800' rel='stylesheet' type='text/css'><!-- Attach Google fonts -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/styles_3.css"><!-- Attach the main stylesheet file -->
+</head>
+<body class="internal-pages trans-header sticky contact type-1">
+	
+	<!-- Top Header -->
+	<div id="top-header">
+		<div class="inner-container container">
+			<!-- Contact Info -->
+			<ul class="contact-info list-inline">
+				<li><i class="fa fa-phone"></i>306 463 2664</li>
+				<li><i class="fa fa-envelope-o"></i>crossroadmotel@hotmail.com</li>
+			</ul>
+
+			
+            <!-- End of Language Switcher -->
+		</div>
+	</div>
+	<!-- End of Top Header -->
+
+	<!-- Main Header -->
+	<header id="main-header">
+		<div class="inner-container container">
+			<div class="left-sec col-sm-4 col-md-3 clearfix">
+				<!-- Top Logo -->
+				<div id="top-logo">
+					<div class="title"><span>CrossRoads</span> Motel</div>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+			</div>
+			<div class="right-sec col-sm-8 col-md-9 clearfix">
+
+				<!-- Book Now -->
+				<a href="http://pms.inngrid.net/online_reservation/select_dates_and_rooms/2058" class="book-now-btn btn btn-default btn-sm">Book Now</a>
+
+				<!-- Main Menu -->
+				<nav id="main-menu">
+					<ul class="list-inline">
+						<li><a href="../index.html">Home</a> 
+				
+						</li>
+						
+						<li><a href="rooms-list.html">Rooms</a>
+						</li>
+						<li><a href=gallery-grid.html>Gallery</a>
+							
+						</li>
+
+						<li class="active"><a href="contact.html">Contact</a>
+							
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Menu Handel -->
+				<div id="main-menu-handle" class="hidden-md hidden-lg"><i class="fa fa-bars"></i></div>
+			</div>
+		</div>
+		<div id="mobile-menu-container" class="hidden-md hidden-lg"></div>
+	</header>
+	<!-- End of Main Header -->
+
+	<!-- Internal Page Header -->
+	<div class="internal-page-title about-page" data-parallax="scroll" data-image-src="../assets/img/motel.jpg">
+		<h1><span>Contact</span> us</h1>
+	</div>
+	<!-- End of Internal Page Header -->
+	<!-- Contact Page Container -->
+	<div class="contact-page-container container">
+        
+    <!---Google maps-->
+    <script
+            src="http://maps.googleapis.com/maps/api/js">
+    </script>
+    <script>
+        var myCenter=new google.maps.LatLng(51.474261,-109.165114);
+        function initialize() {
+            var mapProp = {
+                center:myCenter,
+                zoom:17,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+            var marker=new google.maps.Marker({
+                position:myCenter,
+            });
+                marker.setMap(map);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+        <body>
+            <div id="googleMap" style="width:1165px;height:380px;"></div>
+        </body>
+        </div>
+    <!-----End of google maps--->
+
+		<!-- Contact Info -->
+		<div class="contact-info-main-box clearfix">
+			<div class="contact-info-box col-md-4">
+				<div class="inner-content">
+					<i class="fa fa-envelope-o"></i><div class="info">crossroadmotel@hotmail.com</div>
+				</div>
+			</div>
+			<div class="contact-info-box col-md-4">
+				<div class="inner-content">
+					<i class="fa fa-phone"></i><div class="info">306 463 2664</div>
+				</div>
+			</div>
+			<div class="contact-info-box col-md-4">
+				<div class="inner-content">
+					<i class="fa fa-map-marker "></i><div class="info">215 11th Avenue West, Kindersley, Saskatchewan</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact Form -->
+
+	</div>
+	<!-- End of Contact Page Container -->
+
+
+	<!-- Top Footer -->
+	<div id="top-footer">
+		<div id="go-up-box"><i class="fa fa-chevron-up"></i></div>
+		<div class="inner-container container">
+			<div class="widget col-xs-6 col-md-4">
+            </div>
+		
+                <div class="widget col-md-4 get-in-touch">
+				<h4>Get in Touch</h4>
+				<div class="widget-content">
+					<ul>
+						<li><i class="fa fa-map-marker "></i>215 11th Avenue West, Kindersley, Saskatchewan</li>
+						<li><i class="fa fa-phone"></i>306 463 2664</li>
+						<li><i class="fa fa-envelope-o"></i>crossroadmotel@hotmail.com</li>
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of Top Footer -->
+
+	<!-- Footer -->
+	<footer id="footer">
+		<nav>
+			<ul class="list-inline">
+				<li><a href="../index.html">Home</a></li>
+				
+				<li><a href="gallery-grid.html">Gallery</a></li>
+				
+				<li><a href="rooms-list.html">Rooms</a></li>
+                <li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="copy-right">
+			&copy; 2015 CrossRoads. All Rights Reserved.
+		</div>
+	</footer>
+	<!-- End of Footer -->
+
+	<!-- Include the js files  -->
+	<script type="text/javascript" src="../assets/js/jquery.js"></script>
+	<script type="text/javascript" src="../assets/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="../assets/js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="../assets/js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="../assets/js/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="../assets/js/helper.js"></script>
+	<script type="text/javascript" src="../assets/js/template.js"></script>
+
+	<!-- End of js files and codes -->
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CrossRoads Motel </title><!-- Website's title ( it will be shown in browser's tab ), Change the website's title based on your Hotel information -->
+	<meta name="description" content="Pinar is Hotel and Resort HTML template."><!-- Add your Hotel short description -->
+	<meta name="keywords" content="Responsive,HTML5,CSS3,XML,JavaScript"><!-- Add some Keywords based on your Hotel and your business and separate them by comma -->
+	<meta name="author" content="Joseph a, ravistheme@gmail.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
+	<link href='http://fonts.googleapis.com/css?family=Lobster%7cRaleway:400,300,100,600,700,800' rel='stylesheet' type='text/css'><!-- Attach Google fonts -->
+	<link rel="stylesheet" type="text/css" href="assets/css/styles_3.css"><!-- Attach the main stylesheet file -->
+</head>
+<body class="homepage trans-header sticky white-datepicker">
+	
+	<!-- Top Header -->
+	<div id="top-header">
+		<div class="inner-container container">
+			<!-- Contact Info -->
+			<ul class="contact-info list-inline">
+				<li><i class="fa fa-phone"></i>306 463 2664</li>
+				<li><i class="fa fa-envelope-o"></i>crossroadmotel@hotmail.com</li>
+			</ul>
+
+		</div>
+	</div>
+	<!-- End of Top Header -->
+<!---------------------TopHeader Ends--------------->
+	<!-- Main Header -->
+	<header id="main-header">
+		<div class="inner-container container">
+			<div class="left-sec col-sm-4 col-md-3 clearfix">
+				<!-- Top Logo -->
+				<div id="top-logo">
+					<div class="title"><span>CrossRoads</span>&nbsp;Motel</div>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+			</div>
+			<div class="right-sec col-sm-8 col-md-9 clearfix">
+
+				<!-- Book Now -->
+				<a href="http://pms.inngrid.net/online_reservation/select_dates_and_rooms/2058" class="book-now-btn btn btn-default btn-sm">Book Now</a>
+
+				<!-- Main Menu -->
+				<nav id="main-menu">
+					<ul class="list-inline">
+						<li class="active"><a href="#">Home</a> 
+						</li>
+						
+						<li><a href="pages/rooms-list.html">Rooms</a>
+						</li>
+						<li><a href="pages/gallery-grid.html">Gallery</a>
+						</li>
+						<li><a href="pages/contact.html">Contact</a>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Menu Handel -->
+				<div id="main-menu-handle" class="hidden-md hidden-lg"><i class="fa fa-bars"></i></div>
+			</div>
+		</div>
+		<div id="mobile-menu-container" class="hidden-md hidden-lg"></div>
+	</header>
+	<!-- End of Main Header -->
+
+	<!-- Top Slider and Booking form -->
+	<div id="home-top-section">
+		
+		<!-- Main Slider -->
+		<div id="main-slider">
+			<div class="items">
+	            <img src="assets/img/slider/1.jpg" alt="1"/><!-- Change the URL section based on your image\'s name -->
+	        </div>
+	        <div class="items">
+	            <img src="assets/img/slider/3.jpg" alt="3"/>
+	        </div>
+	        <div class="items">
+	            <img src="assets/img/slider/2.jpg" alt="4"/>
+	        </div>
+	        <div class="items">
+	            <img src="assets/img/slider/4.jpg" alt="2"/>
+	        </div>
+	    </div>
+
+		<!-- Booking Form -->
+		<div class="booking-form-container container">
+			<div id="main-booking-form" class="style-2">
+				<h2>Find A <span>Room</span></h2>
+				
+                <form class="booking-form clearfix" action="http://pms.inngrid.net/online_reservation/select_dates_and_rooms/2058" method="post" target="_blank" id="booking-form-la"><!-- Do Not remove the classes -->
+					
+                    <div class="input-daterange clearfix">
+                        <label for = "check-in-date"></label>
+			            <div class="booking-fields col-xs-6 col-md-12">
+                            <input  id = "check-in-date" name = "check-in-date" placeholder="Choose check in date" class="datepicker-fields check-in" type="text" value/>
+                            <i class="fa fa-calendar"></i><!-- Date Picker Icon -->
+			            </div>
+                        
+			           <label for= "check-out-date"></label>
+                        <div class="booking-fields col-xs-6 col-md-12">
+			                <input id = "check-out-date" name = "check-out-date" placeholder="Choose check out date" class="datepicker-fields check-out" type="text" value/>
+			                <i class="fa fa-calendar"></i>
+			            </div>
+			       
+                    </div>
+                    <label for = "adult_count"></label>
+		            <div class="booking-fields col-xs-6 col-md-12">
+		                <!-- Select boxes ( you can change the items and its value based on your project's needs ) -->
+		                <select name="adult_count">
+		                    <option value="">How Many Adult?</option><!-- Select box items ( you can change the items and its value based on your project's needs ) -->
+		                    <option value="2">1</option>
+		                    <option value="3">2</option>
+		                    <option value="4">3</option>
+		                    <option value="5">4</option>
+		                    <option value="6">5</option>
+		                </select>
+		                <!-- End of Select boxes -->
+		            </div>
+                    <label for ="children_count"></label>
+		            <div class="booking-fields col-xs-6 col-md-12">
+		                <select name="children_count">
+		                    <option value="">How Many Children ?</option>
+                            <option value="0">0</option>
+		                    <option value="1">1</option>
+		                    <option value="2">2</option>
+		                    <option value="3">3</option>
+		                    <option value="4">4</option>
+		                    <option value="5">5</option>
+		                </select>
+		            </div>
+		            <div class="booking-button-container">
+		                <input class="btn btn-default" type="submit" name="submit" value="Check Availability"/><!-- Submit button -->
+		            </div>
+		        </form>
+            </div>
+		</div>
+	</div>
+	<!-- End of Top Slider and Booking form -->
+
+	<!-- Luxury Rooms -->
+	<div id="luxury-rooms">
+		<!-- Heading box -->
+		<div class="heading-box">
+			<h2> <span>Suites</span></h2><!-- Title -->
+			<div class="subtitle">Best rooms with Best services</div><!-- Subtitle -->
+		</div>
+
+		<!-- Room Box Container -->
+		<div class="room-container container">
+			<!-- Room box -->
+            <div class="room-boxes">
+				<img src="assets/img/rooms/12.jpg" alt="West Full Suite" class="room-img"><!-- Room Image -->
+				<div class="room-details col-xs-6 col-md-4">
+					<div class="title">West Full Suite</div><!-- Room title -->
+					<div class="description"><!-- Room Description -->
+						Located on our West side building. This room is the biggest we room we have it has 3 double bed, kitchen with counter top stove, cable tv, wireless internet access, in room fridge, coffee maker and microwave.
+					</div>
+					<a href="http://pms.inngrid.net/online_reservation/select_dates_and_rooms/2058" class="btn btn-default">Book Now</a><!-- Detail link -->
+				</div>
+				
+			</div>
+
+			<!-- Room box -->
+			<div class="room-boxes right">
+				<img src="assets/img/rooms/43.jpg" alt="Non-Smoking Double Suite" class="room-img">
+				<div class="room-details col-xs-6 col-md-4">
+					<div class="title">Non-Smoking Double Suite</div>
+					<div class="description">
+						Located on our Main building. This suite have two double beds, kitchen with a counter top stove, digital tv in the bedroom and 1 on the dining area, wireless and wired internet access, in room fridge, coffee maker and microwave.
+					</div>
+					<a href="http://pms.inngrid.net/online_reservation/select_dates_and_rooms/2058" class="btn btn-default">Book Now</a>
+				</div>
+				<div class="price-container col-xs-6 col-md-8">
+				</div>
+			</div>
+			<!-- Room box -->
+			
+            <div class="room-boxes">
+				<img src="assets/img/rooms/6.jpg" alt="Non-Smoking Single Suite" class="room-img">
+				<div class="room-details col-xs-6 col-md-4">
+					<div class="title">Non-Smoking Single Suite</div>
+					<div class="description">
+						Located on our Main building. This suite has a double bed, kitchen with a counter top stove, digital tv in the bedroom and 1 on the dining area, wireless and wired internet access, in room fridge, coffee maker and microwave.
+					</div>
+					<a href="http://pms.inngrid.net/online_reservation/select_dates_and_rooms/2058" class="btn btn-default">Book Now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of Luxury Rooms -->
+
+
+	<!-- Gallery -->
+	<div id="gallery">
+		<!-- Heading box -->
+		<div class="heading-box">
+			<h2>CrossRoads <span>Gallery</span></h2><!-- Title -->
+		</div>
+
+		<!-- Gallery Container -->
+		<div class="gallery-container">
+			<div class="sort-section">
+				<div class="sort-section-container">
+					<div class="sort-handle">Filters</div>
+					<ul class="list-inline">
+						<li><a href="#" data-filter="*" class="active">All</a></li>
+						<!--<li><a href="#" data-filter=".restaurant">Restaurant</a></li>-->
+						<li><a href="#" data-filter=".food">Food</a></li>
+					<!--	<li><a href="#" data-filter=".pool">Pool</a></li>-->
+						<li><a href="#" data-filter=".rooms">Rooms</a></li>
+						<li><a href="#" data-filter=".lobby">Lobby</a></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="image-main-box clearfix">
+				<li class="item col-xs-6 col-md-3 rooms">
+					<figure>
+                        <a href="assets/img/gallery/1.jpg" class="more-details" data-title="Bathroom">Enlarge</a>
+                        <a href="assets/img/gallery/7.jpg" class="more-details" data-title="Bathroom">Enlarge</a>
+						<img src="assets/img/gallery/2.jpg" alt="11"/>
+						<a href="assets/img/gallery/2.jpg" class="more-details" data-title="Bathroom">Enlarge</a>
+                        <a href="assets/img/gallery/26.jpg" class="more-details" data-title="Bathroom">Enlarge</a>
+                        <a href="assets/img/gallery/27.jpg" class="more-details" data-title="Bathroom">Enlarge</a>
+						
+						<figcaption>
+							<h4><span>Bathrooms</span></h4>
+						</figcaption>
+					</figure>
+				</li>
+				</li>
+				<li class="item col-xs-6 col-md-6 rooms">
+					<figure>
+						<img src="assets/img/gallery/9.jpg" alt="11"/>
+                        
+						<a href="assets/img/gallery/3.jpg" class="more-details" data-title="Rooms">Enlarge</a>
+                        <a href="assets/img/gallery/9.jpg" class="more-details" data-title="Rooms">Enlarge</a>
+                        <a href="assets/img/gallery/10.jpg" class="more-details" data-title="Rooms">Enlarge</a>
+                        <a href="assets/img/gallery/11.jpg" class="more-details" data-title="Rooms ">Enlarge</a>
+                        <a href="assets/img/gallery/12.jpg" class="more-details" data-title="Rooms">Enlarge</a>
+                        <a href="assets/img/gallery/18.jpg" class="more-details" data-title="Rooms">Enlarge</a>
+                        <a href="assets/img/gallery/19.jpg" class="more-details" data-title="Rooms">Enlarge</a>
+                        <a href="assets/img/gallery/20.jpg" class="more-details" data-title="Rooms">Enlarge</a>
+                        <a href="assets/img/gallery/21.jpg" class="more-details" data-title="Rooms">Enlarge</a>
+                        <a href="assets/img/gallery/22.jpg" class="more-details" data-title="Rooms">Enlarge</a>
+                        <a href="assets/img/gallery/29.jpg" class="more-details" data-title="Rooms">Enlarge</a>
+						<figcaption>
+							<h4><span>Comfortable</span> Rooms</h4>
+						</figcaption>
+					</figure>
+				</li>
+				<li class="item col-xs-6 col-md-3 food">
+					<figure>
+						<img src="assets/img/gallery/4.jpg" alt="11"/>
+						<a href="assets/img/gallery/4.jpg" class="more-details" data-title="Foods">Enlarge</a>
+                        <a href="assets/img/gallery/17.jpg" class="more-details" data-title="Foods">Enlarge</a>
+                        <a href="assets/img/gallery/28.jpg" class="more-details" data-title="Foods">Enlarge</a>
+						<figcaption>
+							<h4><span>Food</span></h4>
+						</figcaption>
+					</figure>
+				</li>
+            <li class="item col-xs-6 col-md-3 rooms">
+					<figure>
+						<img src="assets/img/gallery/13.jpg" alt="11"/>
+						<a href="assets/img/gallery/5.jpg" class="more-details" data-title="Kitchen">Enlarge</a>
+                        <a href="assets/img/gallery/13.jpg" class="more-details" data-title="Kitchen">Enlarge</a>
+                         <a href="assets/img/gallery/23.jpg" class="more-details" data-title="Kitchen">Enlarge</a>
+                         <a href="assets/img/gallery/25.jpg" class="more-details" data-title="Kitchen">Enlarge</a>
+						<figcaption>
+							<h4><span>Kitchen</span></h4>
+						</figcaption>
+					</figure>
+				</li>
+
+				<li class="item col-xs-6 col-md-3 lobby">
+					<figure>
+						<img src="assets/img/gallery/6.jpg" alt="11"/>
+						<a href="assets/img/gallery/6.jpg" class="more-details" data-title="Lobby">Enlarge</a>
+                        <a href="assets/img/gallery/14.jpg" class="more-details" data-title="Lobby">Enlarge</a>
+                        <a href="assets/img/gallery/15.jpg" class="more-details" data-title="Lobby">Enlarge</a>
+						<figcaption>
+							<h4><span>lobby</span></h4>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+
+			
+		</div>
+	</div>
+	<!-- End of Gallery -->
+
+	<!-- Top Footer -->
+	<div id="top-footer">
+		<div id="go-up-box"><i class="fa fa-chevron-up"></i></div>
+		<div class="inner-container container">
+			<div class="widget col-xs-6 col-md-4">
+				
+			</div>
+			
+			<div class="widget col-md-4 get-in-touch">
+				<h4>Get in Touch</h4>
+				<div class="widget-content">
+					<ul>
+						<li><i class="fa fa-map-marker "></i>215 11th Avenue West, Kindersley, Saskatchewan</li>
+						<li><i class="fa fa-phone"></i>306 463 2664</li>
+						<li><i class="fa fa-envelope-o"></i>crossroadmotel@hotmail.com</li>
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of Top Footer -->
+
+	<!-- Footer -->
+	<footer id="footer">
+		<nav>
+			<ul class="list-inline">
+				<li><a href="#">Home</a></li>
+				
+				<li><a href="pages/gallery-grid.html">Gallery</a></li>
+			
+				<li><a href="pages/rooms-list.html">Rooms</a></li>
+                 <li><a href="pages/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="copy-right">
+			&copy; 2015 CrossRoads. All Rights Reserved.
+		</div>
+	</footer>
+	<!-- End of Footer -->
+
+	<!-- Include the js files  -->
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="assets/js/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="assets/js/helper.js"></script>
+	<script type="text/javascript" src="assets/js/template.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		"use strict";
+		// Init the Wow plugin
+    	new WOW({mobile: false}).init();
+	});
+	</script>
+
+	<!-- End of js files and codes -->
+</body>
+</html>
